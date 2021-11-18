@@ -1,0 +1,10 @@
+.App {
+    margin: 0px 150px;
+    font-family: Serif;
+}
+
+@media (max-width: 600px) {
+    .App {
+        margin: 0px 20px;
+    }
+}

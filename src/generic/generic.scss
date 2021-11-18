@@ -1,0 +1,55 @@
+@import "../variable";
+
+.CustomInput {
+  position: relative;
+
+  input {
+    border-radius: 25px;
+    border: none;
+    background-color: #ededed;
+    padding: 10px 0 10px 40px;
+    outline: none;
+    font-size: 18px;
+    color: #acacac;
+    width: 200px;
+    @media(max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .SearchIcon {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    @media(max-width: 800px) {
+      display: block;
+      position: static;
+    }
+
+    i {
+      color: #acacac;
+      @media(max-width: 800px) {
+        display: block;
+        color: #000;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.CustomButton {
+  button {
+    padding: 15px 30px;
+    background-color: $primary-blue;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #ff8c00;
+    transition: 300ms;
+  }
+}

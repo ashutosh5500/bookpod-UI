@@ -1,12 +1,12 @@
 import React from 'react';
-import Img1 from '../assets/images/braithwait.jpeg';
-import Img2 from '../assets/images/andrea.jpeg';
-import Img3 from '../assets/images/stephen.jpeg';
-import Img4 from '../assets/images/jorge amado.jpeg';
-import Img5 from '../assets/images/gayle forman.jpeg';
-import Img6 from '../assets/images/shashi tharoor.jpeg';
-import Img7 from '../assets/images/jkRowling.jpeg';
-import Img8 from '../assets/images/john green.jpeg';
+import Img1 from '../images/braithwait.jpeg';
+import Img2 from '../images/andrea.jpeg';
+import Img3 from '../images/stephen.jpeg';
+import Img4 from '../images/jorge amado.jpeg';
+import Img5 from '../images/gayle forman.jpeg';
+import Img6 from '../images/shashi tharoor.jpeg';
+import Img7 from '../images/jkRowling.jpeg';
+import Img8 from '../images/john green.jpeg';
 
 const FeaturedWriters = (props) => {
     const featuredWriters = [

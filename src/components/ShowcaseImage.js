@@ -1,9 +1,10 @@
 import React from 'react';
+import Logo from "../assets/images/pexels-orione-conceição-7923926.jpg"
 
 const ShowcaseImage = () => {
     return (
         <div className={"ShowcaseImage"}>
-            <div className="Image"></div>
+            <div className="Image" style={{backgroundImage: "url(" + Logo + ")"}}></div>
             <div className="Card">
                 <div>
                     <h3>LOREM IPSUM</h3>

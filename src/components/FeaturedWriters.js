@@ -10,14 +10,14 @@ import Img8 from '../assets/images/john green.jpeg';
 
 const FeaturedWriters = (props) => {
     const featuredWriters = [
-        {featuredImage: Img1, featuredName: "E R Braithwaite"},
-        {featuredImage: Img2, featuredName: "Andrea Levy"},
-        {featuredImage: Img3, featuredName: "Stephen King"},
-        {featuredImage: Img4, featuredName: "Jorge Amado"},
-        {featuredImage: Img5, featuredName: "Gayle Forman"},
-        {featuredImage: Img6, featuredName: "Shashi Tharoor"},
-        {featuredImage: Img7, featuredName: "J.K. Rowling"},
-        {featuredImage: Img8, featuredName: "John green"},
+        {id: 1, featuredImage: Img1, featuredName: "E R Braithwaite"},
+        {id: 2, featuredImage: Img2, featuredName: "Andrea Levy"},
+        {id: 3, featuredImage: Img3, featuredName: "Stephen King"},
+        {id: 4, featuredImage: Img4, featuredName: "Jorge Amado"},
+        {id: 5, featuredImage: Img5, featuredName: "Gayle Forman"},
+        {id: 6, featuredImage: Img6, featuredName: "Shashi Tharoor"},
+        {id: 7, featuredImage: Img7, featuredName: "J.K. Rowling"},
+        {id: 8, featuredImage: Img8, featuredName: "John green"},
     ]
     return (
         <div className={"FeaturedWritersContainer"}>
@@ -25,10 +25,11 @@ const FeaturedWriters = (props) => {
                 <h1>Featured Writers</h1>
                 <div className={"FeaturedImages"}>
                     {
-                        featuredWriters.map(item => <div>
+                        featuredWriters.map(item => <div key={item.id}>
                             <img src={item.featuredImage} alt=""/>
                             <h3>{item.featuredName}</h3>
-                        </div>)
+                        </div>
+                        )
                     }
                 </div>
             </div>
